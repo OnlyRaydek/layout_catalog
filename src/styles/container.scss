@@ -1,16 +1,12 @@
 .container {
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
 
   &__block {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    gap: 50px 0;
     justify-content: space-between;
-    width: 944px;
+    max-width: 944px;
     margin: 0 auto;
-
-    &:nth-child(n + 2) {
-      margin-top: 50px;
-    }
   }
 }
